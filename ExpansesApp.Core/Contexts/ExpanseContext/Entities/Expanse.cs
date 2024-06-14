@@ -5,7 +5,7 @@ public class Expanse : Entity
 {
     public string Name { get; set; } = string.Empty;
     public decimal Price { get; set; }
-    public string Category { get; set; } = string.Empty;
+    public Category? Category { get; set; }
     public Installment? Installment { get; set; }
     public bool IsPaid => RemainingInstallments == TotalInstallments;
     public bool IsInstallment { get; set; } = false;
