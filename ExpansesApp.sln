@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpansesApp.Core", "Expanse
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpansesApp.Infra", "ExpansesApp.Infra\ExpansesApp.Infra.csproj", "{418D92AB-CDD0-4AEC-9F2A-C8F5A17C89D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpansesApp.Api", "ExpansesApp.Api\ExpansesApp.Api.csproj", "{51A28BA6-B839-41C3-B696-2B0EE4421952}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExpansesApp.Api", "ExpansesApp.Api\ExpansesApp.Api.csproj", "{CC8E3339-4BB4-406F-A0A5-4372B916272F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,9 +26,9 @@ Global
 		{418D92AB-CDD0-4AEC-9F2A-C8F5A17C89D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{418D92AB-CDD0-4AEC-9F2A-C8F5A17C89D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{418D92AB-CDD0-4AEC-9F2A-C8F5A17C89D8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{51A28BA6-B839-41C3-B696-2B0EE4421952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{51A28BA6-B839-41C3-B696-2B0EE4421952}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{51A28BA6-B839-41C3-B696-2B0EE4421952}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{51A28BA6-B839-41C3-B696-2B0EE4421952}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC8E3339-4BB4-406F-A0A5-4372B916272F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC8E3339-4BB4-406F-A0A5-4372B916272F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC8E3339-4BB4-406F-A0A5-4372B916272F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC8E3339-4BB4-406F-A0A5-4372B916272F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

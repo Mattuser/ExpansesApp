@@ -1,0 +1,6 @@
+@ExpansesApp.Api_HostAddress = http://localhost:5159
+
+GET {{ExpansesApp.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
