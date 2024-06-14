@@ -1,5 +1,4 @@
 ﻿using ExpansesApp.Core.Contexts.SharedContext.Entities;
-using System.Xml.Linq;
 
 namespace ExpansesApp.Core.Contexts.ExpanseContext.Entities;
 public class Category : Entity
