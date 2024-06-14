@@ -7,10 +7,8 @@ public class Expanse : Entity
     public decimal Price { get; set; }
     public string Category { get; set; } = string.Empty;
     public Installment? Installment { get; set; }
-    public bool IsPaid { get; set; } //Campo processado
-    public bool isInstallment { get; set; } = false;
+    public bool IsPaid => RemainingInstallments == TotalInstallments;
+    public bool IsInstallment { get; set; } = false;
     public int TotalInstallments { get; set; }
     public int RemainingInstallments { get; set; }
-
-
 }
