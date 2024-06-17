@@ -2,6 +2,7 @@
 using ExpansesApp.Core.Contexts.ExpanseContext.Contracts.UseCases;
 using ExpansesApp.Core.Contexts.ExpanseContext.Entities;
 using ExpansesApp.Core.Contexts.ExpanseContext.ValueObjects;
+using ExpansesApp.Core.Contexts.Specification;
 using static ExpansesApp.Core.Contexts.ExpanseContext.UseCases.Create.Response;
 
 namespace ExpansesApp.Core.Contexts.ExpanseContext.UseCases.Create;
@@ -14,6 +15,11 @@ public class CreateCategoryUseCase : ICreateCategoryUseCase
     }
     public async Task<Response> Execute(CreateCategoryRequest request, CancellationToken cancellationToken)
     {
+
+        var res = CreateCategorySpecification.Ensure(request);
+        if (!res.IsValid)
+            return new Response("Requisição inválida", 400, res.Notifications);
+
         Name Name;
         Category Category;
 
