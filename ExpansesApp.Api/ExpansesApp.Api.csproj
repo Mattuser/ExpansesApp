@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExpansesApp.Core\ExpansesApp.Core.csproj" />
+    <ProjectReference Include="..\ExpansesApp.Infra\ExpansesApp.Infra.csproj" />
   </ItemGroup>
 
 </Project>

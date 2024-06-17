@@ -12,6 +12,7 @@ public class CategoryController : ControllerBase
     {
         _createCategoryUseCase = createCategoryUseCase;
     }
+    [HttpPost]
     public async Task<IResult> Create(CreateCategoryRequest request)
     {
         var result = await _createCategoryUseCase.Execute(request, new CancellationToken());

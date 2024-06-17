@@ -1,6 +1,7 @@
 using ExpansesApp.Core.Contexts.ExpanseContext.Contracts.Repositories;
 using ExpansesApp.Core.Contexts.ExpanseContext.Contracts.UseCases;
 using ExpansesApp.Core.Contexts.ExpanseContext.UseCases.Create;
+using ExpansesApp.Infra.Contexts.ExpanseContext.UseCases;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,7 +12,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<ICategoryRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICreateCategoryUseCase, CreateCategoryUseCase>();
 
 
